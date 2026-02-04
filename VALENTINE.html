@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Valentine</title>
+<style>
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+  font-family: Arial;
+}
+
+.box {
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 20px;
+  position: relative;
+  width: 220px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+#yes {
+  left: 0;
+  background: green;
+  color: white;
+}
+
+#no {
+  right: 0;
+  background: lightgray;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h1>Saniya</h1>
+  <h2>Will you be my Valentine? ❤️</h2>
+
+  <div class="buttons">
+    <button id="yes">YES</button>
+    <button id="no">NO</button>
+  </div>
+</div>
+
+<script>
+document.getElementById("no").addEventListener("mouseover", function () {
+  this.style.left = Math.random() * 150 + "px";
+  this.style.top  = Math.random() * 40  + "px";
+});
+
+document.getElementById("yes").addEventListener("click", function () {
+  document.body.innerHTML =
+    "<h1 style='text-align:center; color:#e91e63;'>I love you Bauaa ❤️🥰</h1>";
+});
+</script>
+
+</body>
+</html>
